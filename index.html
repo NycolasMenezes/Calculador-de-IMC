@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de IMC</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    section {
+        border: 2px solid black;
+        text-align: center;
+        border-radius: 20px;
+        height: 440px;
+        background-color: dodgerblue;
+        width: 460px;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    input#calcular {
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    h2#resultado {
+        border: 2px solid black;
+        width: 400px;
+        height: 30px;
+        margin: auto;
+        margin-top: 20px;
+        border-radius: 15px;
+        background-color: white;
+    }
+
+    h2#classificacao {
+        text-align: center;
+    }
+    p {
+        text-align: center
+    }
+
+</style>
+<body>
+    <section>
+        <h1>Calculador de IMC</h1>
+        
+        <div>
+            <h2>Altura</h2>
+            <input type="number" name="altura" id="altura">
+        </div>
+
+        <div>
+            <h2>Peso</h2>
+            <input type="number" name="peso" id="peso">
+        </div>
+        
+        <input type="button" value="Calcular" id="calcular" onclick="calcular()">
+
+        <h2 id="resultado"></h2>
+        <h2 id="classificacao"></h2>
+    </section>
+
+    <p>Desenvolvido por NycolasDev&copy;</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
